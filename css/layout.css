@@ -183,7 +183,8 @@
     top: 0;}
       .layout.fixed-header .header ~ .layout,
       .layout.fixed-header .header ~ .content {
-        margin-top: 64px; }
+        margin-top: 0; 
+    }
     .layout.fixed-header.fixed-sidebar .header {
       /** width: calc(100% - 280px); **/
       width: 100%; 
