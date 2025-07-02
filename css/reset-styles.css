@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --body-font: "Noto Sans", sans-serif;
+    --font-primary: "Noto Sans", sans-serif;
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+    --logo-color: #BEA364;
+    --profile-border-color: #CDA341;
+    --color-primary: #56441b;
+    --color-secondary: #000;
+    --text-color: #333333;
+    --text-color-999: #999999;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --font-12: 12px;
+    --font-14: 14px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-22: 22px;
+    --font-24: 24px;
+    --font-26: 26px;
+    --font-28: 28px;
+    --font-36: 36px;
+    --font-45: 45px;
+    --color-light-navyblue: #1a1c27;
+    --color-dark-navyblue: #0F1119;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #F1F1F1;
+    --color-light-blue: #53A9FE;
+    --color-dark-blue: #3180D0;
+    --color-light-green: #4BCE7B;
+    --color-dark-green: #2A9B53;
+    --color-light-orange: #EAA63A;
+    --color-dark-orange: #C18420;
+    --color-light-red: #FF6D6D;
+    --color-dark-red: #D13332;
+    --card-padding: 1.8rem;
+    --card-border-radius: 10px;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --w-70: 70%;
+    --w-30: 30%;
+  }
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: var(--font-weight-700);
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 21px;
+  }
+  h4{
+    font-size: 18px;
+    font-weight: var(--font-weight-600);
+  }
+  h5{
+    font-size: 16px;
+  }
+  h6{
+    font-size: 14px;
+  }
+
+  .green{
+    color: var(--color-dark-green);
+  }
+  .font-12{
+    font-size: var(--font-12);
+  }
+  .font-36{
+    font-size: var(--font-36);
+  }
+  .flex{
+    display: flex;
+  }
+  .bold-700{
+    font-weight: var(--font-weight-700);
+  }
+  .w-70{
+    width: var(--w-70);
+  }
+  .w-30{
+    width: var(--w-30);
+  }
+  img{
+    max-width: 100%;
+  }
+
+  .card-white{
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+  }
+  .hr{
+    border: 1px solid #dedede;
+  }
