@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: GPM - Global Precious Metals ::</title>
+    <meta property="og:title" content=":: GPM - Global Precious Metals ::" />
+    <meta property=”og:image” content=”assets/logo.svg” />
+    <meta property=”og:description” content=” Experience financial freedom and confidence with bespoke solutions tailored to you. Share your goals and locations, and we'll guide you to achieve them. Discover possibilities beyond your expectations and step into new realms of wealth freedom.” />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css'>
+    <link rel='stylesheet' href='css/layout.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/logo-icon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="layout has-sidebar fixed-sidebar fixed-header">
+        <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+          <!--<a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>-->
+          <div class="image-wrapper">
+            <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+          </div>
+          <div class="sidebar-layout">
+            <div class="sidebar-header">
+              <div class="pro-sidebar-logo">
+                <div><img src="assets/main-logo.svg" alt=""></div>
+                <h5>  
+                    <span>Global</span>
+                    <span>Precious</span>
+                    <span>Metals</span>
+                </h5>
+              </div>
+            </div>
+            <div class="sidebar-content">
+              <nav class="menu open-current-submenu">
+                <ul>
+                  <!-- <li class="menu-header"><span> GENERAL </span></li> -->
+                  <li class="menu-item sub-menu">
+                    <a href="#">
+                      <span class="menu-icon">
+                        <i class="ri-home-4-fill"></i>
+                      </span>
+                      <span class="menu-title">Home</span>
+                    </a>
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="menu-item">
+                          <a href="index.html">
+                            <span class="menu-title">Dashboard</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Statistics</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Reports</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-item sub-menu">
+                    <a href="#">
+                      <span class="menu-icon">
+                        <i class="ri-shield-star-fill"></i>
+                      </span>
+                      <span class="menu-title">Favourites</span>
+                    </a>
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Products</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Orders</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">credit card</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-item sub-menu nav-active">
+                    <a href="#">
+                      <span class="menu-icon">
+                        <i class="ri-exchange-dollar-fill"></i>
+                      </span>
+                      <span class="menu-title">Transaction</span>
+                      <!--<span class="menu-suffix">
+                        <span class="badge primary">New</span>
+                      </span>-->
+                    </a>
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="menu-item sub-menu">
+                          <a href="#">
+                            <span class="menu-icon">
+                                <i class="ri-circle-fill green font-12"></i>
+                            </span>
+                            <span class="menu-title">Sales</span>
+                          </a>
+                          <div class="sub-menu-list">
+                            <ul>
+                              <li class="menu-item">
+                                <a href="sales-order-list.html">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>
+                                  <span class="menu-title">SO</span>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>                                   
+                                  <span class="menu-title">SO-A</span>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>
+                                  <span class="menu-title">DO</span>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>
+                                  <span class="menu-title">DO-A</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-item sub-menu">
+                            <a href="#">
+                              <span class="menu-icon">
+                                  <i class="ri-circle-fill green font-12"></i>
+                              </span>
+                              <span class="menu-title">Purchase</span>
+                            </a>
+                            <div class="sub-menu-list">
+                              <ul>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>
+                                    <span class="menu-title">SO</span>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>                                   
+                                    <span class="menu-title">SO-A</span>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>
+                                    <span class="menu-title">DO</span>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>
+                                    <span class="menu-title">DO-A</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        <li class="menu-item sub-menu">
+                          <a href="#">
+                            <span class="menu-icon">
+                                <i class="ri-circle-fill green font-12"></i>
+                            </span>
+                            <span class="menu-title">Warehouse</span>
+                          </a>
+                          <div class="sub-menu-list">
+                            <ul>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>
+                                  <span class="menu-title">SO</span>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>                                   
+                                  <span class="menu-title">SO-A</span>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>
+                                  <span class="menu-title">DO</span>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="#">
+                                    <span class="menu-icon">
+                                        <i class="ri-circle-fill"></i>
+                                    </span>
+                                  <span class="menu-title">DO-A</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-item sub-menu">
+                            <a href="#">
+                              <span class="menu-icon">
+                                  <i class="ri-circle-fill green font-12"></i>
+                              </span>
+                              <span class="menu-title">Accounts</span>
+                            </a>
+                            <div class="sub-menu-list">
+                              <ul>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>
+                                    <span class="menu-title">SO</span>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>                                   
+                                    <span class="menu-title">SO-A</span>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>
+                                    <span class="menu-title">DO</span>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="#">
+                                      <span class="menu-icon">
+                                          <i class="ri-circle-fill"></i>
+                                      </span>
+                                    <span class="menu-title">DO-A</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-item sub-menu">
+                    <a href="#">
+                      <span class="menu-icon">
+                       <i class="ri-pie-chart-fill"></i>
+                      </span>
+                      <span class="menu-title">Reports</span>
+                    </a>
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Tab 1</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Tab 2</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-item sub-menu">
+                    <a href="#">
+                      <span class="menu-icon">
+                       <i class="ri-layout-grid-fill"></i>
+                      </span>
+                      <span class="menu-title">Masters</span>
+                    </a>
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Tab 1</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#">
+                            <span class="menu-title">Tab 2</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="sidebar-footer">
+              <div class="footer-box">
+                <div style="padding: 0 10px">
+                  <span style="display: block; margin-bottom: 10px"
+                    >Copyrights @ 2025 | GPM
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div id="overlay" class="overlay"></div>
+        <div class="layout">
+            <header class="header">
+                <a id="btn-collapse" class="sidebar-collapser"><i class="ri-menu-3-line"></i></a>
+                <div class="logo-sm">
+                  <a href="index.html"><img src="assets/main-logo.svg" alt=""></a>
+                </div>
+                <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+                    <i class="ri-menu-line ri-xl"></i>
+                  </a>
+                <div class="search">
+                    <div class="search-bar">
+                        <input id="searchbarinput" class="search-bar-input" type="text" placeholder="Search by keyword" />
+                        <i class="ri-search-line" id="searchicon"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="timezone">
+                        <div id="time-wrapper">
+                            <div id="time-holder">
+                              <div>
+                                <span><i class="ri-time-line"></i></span>
+                                <span><strong>EST:</strong> </span>
+                                <span id="est"></span>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="user-profile">
+                        <div class="profile">
+                            <div class="user">
+                                <h6>Katherine Cooper</h6>
+                            </div>
+                            <div class="img-box">
+                                <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-list">
+                        <div class="user-head">
+                            <div class="img-box">
+                                <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+                            </div>
+                            <div class="user-data">
+                                <h6>Katherine Cooper</h6>
+                                <p>@probablykat66</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="ri-user-3-line"></i>&nbsp;My Profile</a></li>
+                            <li><a href="#"><i class="ri-settings-3-line"></i>&nbsp;Settings</a></li>
+                            <li><a href="#"><i class="ri-logout-circle-r-line"></i>&nbsp;Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+          <main class="content">
+            <div>
+                <div class="addNewsales">
+                    <div class="card-white">
+                      <div class="breadcrumb p-30">
+                        <h2 style="margin-bottom: 0">Add New Sales Order</h2>
+                        <ul class="breadcrumb-nav">
+                          <li><a href="#">Transaction</a></li>
+                          <li><a href="#">Sale Orders</a></li>
+                          <li>Add New SO</li>
+                        </ul>
+                      </div>
+                      <div class="hr"></div>
+                        <div class="add-new-sales-data">
+                          <form action="">
+                          <div class="form-data">
+
+                            <div class="data-fields m-b-10">
+                              <label for="">SO Date *</label>
+                              <input type="date">
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">SO No *</label>
+                              <input type="text" name="" placeholder="Enter SO Number">
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Project Code *</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Customer *</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Exchange Rate</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">SO No *</label>
+                              <input type="text" name="" placeholder="Enter SO Number">
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">TX Type *</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Metal Type</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Delivery Address</label>
+                              <input type="text" name="" placeholder="Enter SO Number">
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Currency *</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Warehouse</label>
+                              <select name="" id="">
+                                <option value="Select">Select</option>
+                                <option value="opt1">Option 1</option>
+                                <option value="opt2">Option 2</option>
+                              </select>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Transporter</label>
+                              <input type="text" name="" placeholder="Enter SO Number">
+                            </div>
+                          </div>
+                        </form>
+                        <br>
+                        <div class="hr"></div>
+                        <br>
+                        <div class="buttons">
+                          <button class="btn-add"><i class="ri-add-line"></i>&nbsp; Add BRV</button>
+                          <button class="copy-btn"><i class="ri-file-copy-line"></i>&nbsp;Copy</button>
+                          <button class="save-btn"><i class="ri-save-line"></i>&nbsp;Save</button>
+                          <button class="approve-btn"><i class="ri-check-line"></i>&nbsp;Approve</button>
+                          <button class="reject-btn"><i class="ri-close-line"></i>&nbsp;Reject</button>
+                          <button class="cancel-btn"><i class="ri-close-line"></i>&nbsp;Cancel</button>
+                        </div>
+                        </div>
+                        <div class="items-list">
+                          <div class="head">
+                            <h4>Items List</h4>
+                            <button id="openPopupBtn"><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
+                            <button><a href="#" class="reject-btn"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button>
+                          </div>
+                          <br>
+                          <div class="so-table">
+                            <div style="overflow-x:auto;">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>Item code & Name <i class="ri-expand-up-down-line"></i></th>
+                                    <th>Fine OZ</th>
+                                    <th>OTY</th>
+                                    <th>Spot Price</th>
+                                    <th>Premium</th>
+                                    <th>Tax%</th>
+                                    <th>Total Price </th>
+                                    <th>Def Curr</th>
+                                    <th>Delv Date</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>G_100_CB_P49_AN</td>
+                                    <td>3,444</td>
+                                    <td>5000</td>
+                                    <td>2,000</td>
+                                    <td>20,000</td>
+                                    <td>14%</td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td>2025-06-12</td>
+                                    <td class="tooltip">
+                                      <i class="ri-more-2-fill"></i>
+                                      <span class="tooltiptext">
+                                        <div class="icons">
+                                          <span><i class="ri-edit-line"></i> Edit</span>
+                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                        </div>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>G_100_CB_P49_AN</td>
+                                    <td>3,444</td>
+                                    <td>5000</td>
+                                    <td>2,000</td>
+                                    <td>20,000</td>
+                                    <td>14%</td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td>2025-06-12</td>
+                                    <td class="tooltip">
+                                      <i class="ri-more-2-fill"></i>
+                                      <span class="tooltiptext">
+                                        <div class="icons">
+                                          <span><i class="ri-edit-line"></i> Edit</span>
+                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                        </div>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>20,000</td>
+                                    <td>- </td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td></td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items-list">
+                          <div class="head">
+                            <h4>Add Cost</h4>
+                            <button id="openPopupBtn1"><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
+                            <button><a href="#" class="reject-btn"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button>
+                          </div>
+                          <br>
+                          <div class="so-table">
+                            <div style="overflow-x:auto;">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>Item code & Name <i class="ri-expand-up-down-line"></i></th>
+                                    <th>Fine OZ</th>
+                                    <th>OTY</th>
+                                    <th>Spot Price</th>
+                                    <th>Premium</th>
+                                    <th>Tax%</th>
+                                    <th>Total Price </th>
+                                    <th>Def Curr</th>
+                                    <th>Delv Date</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>G_100_CB_P49_AN</td>
+                                    <td>3,444</td>
+                                    <td>5000</td>
+                                    <td>2,000</td>
+                                    <td>20,000</td>
+                                    <td>14%</td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td>2025-06-12</td>
+                                    <td class="tooltip">
+                                      <i class="ri-more-2-fill"></i>
+                                      <span class="tooltiptext">
+                                        <div class="icons">
+                                          <span><i class="ri-edit-line"></i> Edit</span>
+                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                        </div>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>G_100_CB_P49_AN</td>
+                                    <td>3,444</td>
+                                    <td>5000</td>
+                                    <td>2,000</td>
+                                    <td>20,000</td>
+                                    <td>14%</td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td>2025-06-12</td>
+                                    <td class="tooltip">
+                                      <i class="ri-more-2-fill"></i>
+                                      <span class="tooltiptext">
+                                        <div class="icons">
+                                          <span><i class="ri-edit-line"></i> Edit</span>
+                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                        </div>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>20,000</td>
+                                    <td>- </td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td></td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <footer class="footer">
+              <small style="display: inline-block">
+                © 2025 - All rights are reserved by
+                <a target="_blank" href="javascript:void(0)"> GPM </a>
+              </small>
+            </footer>
+          </main>
+          <div class="overlay"></div>
+        </div>
+        <div id="pop-overlay"></div>
+        <div id="popup" class="add-so-pop">
+          <div class="head">
+            <h3>Add New Item</h3>
+            <button id="closePopupBtn"><i class="ri-close-line"></i></button>
+          </div>
+          <div class="hr"></div>
+          <div class="pop-content-area">
+            <form action="" class="pop-content">
+            <div>
+                <div class="form-data">
+                  <div class="data-fields m-b-10">
+                    <label for="">Item *</label>
+                    <select name="" id="">
+                      <option value="Select">Select</option>
+                      <option value="opt1">Option 1</option>
+                      <option value="opt2">Option 2</option>
+                    </select>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Item Name</label>
+                    <input type="text" name="" placeholder="Enter Item Name">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Fine OZ *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Gross OZ *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Purity</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Spot Prize/OZ *</label>
+                    <input type="text" name="" placeholder="Enter SO Number">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Quantity *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Item Price</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Premium (%/Amt)</label>
+                    <span>
+                      <input type="number" min="0" max="10000" step="1" placeholder="00.00" required="required">
+                      <select name="" id="">
+                        <option value="percentage">Percentage</option>
+                        <option value="opt1">Option 1</option>
+                        <option value="opt2">Option 2</option>
+                      </select>
+                    </span>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Premium Amount *</label>
+                    <input type="number" min="0" max="10000" step="1" required="required">
+                  </div>
+                </div>
+            </div>
+            <div>
+                <div class="form-data">
+                  <div class="data-fields m-b-10">
+                    <label for="">Final Premium</label>
+                    <input type="text" name="" placeholder="Enter Item Name">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">EXTax Price Name</label>
+                    <input type="text" name="" placeholder="Enter Item Name">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax % OZ *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax Acc Code</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Total Prize *</label>
+                    <input type="text" name="" placeholder="Enter SO Number">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Default Curr *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Del Date</label>
+                    <input type="date" name="" placeholder="00.00">
+                  </div>
+                </div>
+            </div>
+          </form>
+          <br>
+          <div class="buttons">
+            <button class="calculate-btn"><i class="ri-calculator-line"></i>&nbsp;Calculate</button>
+            <button class="save-btn"><i class="ri-save-line"></i>&nbsp;Save</button>
+            <button class="cancel-btn"><i class="ri-close-line"></i>&nbsp;Cancel</button>
+          </div>
+          </div>
+        </div>
+        <!-- Add New Cost -->
+        <div id="popupNewCost" class="add-so-pop">
+          <div class="head">
+            <h3>Add New Cost</h3>
+            <button id="closePopupBtn1"><i class="ri-close-line"></i></button>
+          </div>
+          <div class="hr"></div>
+          <div class="pop-content-area">
+            <form action="" class="pop-content">
+            <div>
+                <div class="form-data">
+                  <div class="data-fields m-b-10">
+                    <label for="">Item *</label>
+                    <select name="" id="">
+                      <option value="Select">Select</option>
+                      <option value="opt1">Option 1</option>
+                      <option value="opt2">Option 2</option>
+                    </select>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Item Name</label>
+                    <input type="text" name="" placeholder="Enter Item Name">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Fine OZ *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Gross OZ *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Purity</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Spot Prize/OZ *</label>
+                    <input type="text" name="" placeholder="Enter SO Number">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Quantity *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Item Price</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Premium (%/Amt)</label>
+                    <span>
+                      <input type="number" min="0" max="10000" step="1" placeholder="00.00" required="required">
+                      <select name="" id="">
+                        <option value="percentage">Percentage</option>
+                        <option value="opt1">Option 1</option>
+                        <option value="opt2">Option 2</option>
+                      </select>
+                    </span>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Premium Amount *</label>
+                    <input type="number" min="0" max="10000" step="1" required="required">
+                  </div>
+                </div>
+            </div>
+            <div>
+                <div class="form-data">
+                  <div class="data-fields m-b-10">
+                    <label for="">Final Premium</label>
+                    <input type="text" name="" placeholder="Enter Item Name">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">EXTax Price Name</label>
+                    <input type="text" name="" placeholder="Enter Item Name">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax % OZ *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax Acc Code</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Total Prize *</label>
+                    <input type="text" name="" placeholder="Enter SO Number">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Default Curr *</label>
+                    <input type="number" name="" placeholder="00.00">
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Del Date</label>
+                    <input type="date" name="" placeholder="00.00">
+                  </div>
+                </div>
+            </div>
+          </form>
+          <br>
+          <div class="buttons">
+            <button class="calculate-btn"><i class="ri-calculator-line"></i>&nbsp;Calculate</button>
+            <button class="save-btn"><i class="ri-save-line"></i>&nbsp;Save</button>
+            <button class="cancel-btn"><i class="ri-close-line"></i>&nbsp;Cancel</button>
+          </div>
+          </div>
+        </div>
+    </div>
+    <script src='https://unpkg.com/@popperjs/core@2'></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

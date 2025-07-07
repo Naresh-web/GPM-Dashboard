@@ -34,7 +34,7 @@
               <nav class="menu open-current-submenu">
                 <ul>
                   <!-- <li class="menu-header"><span> GENERAL </span></li> -->
-                  <li class="menu-item sub-menu nav-active">
+                  <li class="menu-item sub-menu">
                     <a href="#">
                       <span class="menu-icon">
                         <i class="ri-home-4-fill"></i>
@@ -88,7 +88,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="menu-item sub-menu">
+                  <li class="menu-item sub-menu nav-active">
                     <a href="#">
                       <span class="menu-icon">
                         <i class="ri-exchange-dollar-fill"></i>
@@ -342,7 +342,7 @@
             <header class="header">
                 <a id="btn-collapse" class="sidebar-collapser"><i class="ri-menu-3-line"></i></a>
                 <div class="logo-sm">
-                    <a href="index.html"><img src="assets/main-logo.svg" alt=""></a>
+                    <img src="assets/main-logo.svg" alt="">
                 </div>
                 <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
                     <i class="ri-menu-line ri-xl"></i>
@@ -394,112 +394,178 @@
                 </div>
             </header>
           <main class="content">
-            <div class="breadcrumb">
-              <h2 style="margin-bottom: 0">Dashboard</h2>
-              <ul class="breadcrumb-nav">
-                <li><a href="#">Home</a></li>
-                <li>Dashboard</li>
-              </ul>
-            </div>
             <div>
-              <div class="insights">
-                <!-- CARD -->
-                <div class="card">
-                    <div class="middle">
-                        <div class="left">
-                            <div class="flex">
-                                <h1 class="stat-number">20 </h1>
-                                <i class="ri-add-line font-36 bold-700"></i>
-                            </div>
-                            <small class="text-muted">Favourites</small>
-                        </div>
-                        <div class="right"><i class="ri-shield-star-fill"></i></div>
-                    </div>
-                    <div class="card-info">
-                        <a href="#">More Info <i class="ri-arrow-right-wide-line"></i></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="middle">
-                        <div class="left">
-                            <div class="flex">
-                                <h1 class="stat-number">30 </h1>
-                                <i class="ri-add-line font-36 bold-700"></i>
-                            </div>
-                            <small class="text-muted">Transactions</small>
-                        </div>
-                        <div class="right"><i class="ri-exchange-dollar-fill"></i></div>
-                    </div>
-                    <div class="card-info">
-                        <a href="#">More Info <i class="ri-arrow-right-wide-line"></i></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="middle">
-                        <div class="left">
-                            <div class="flex">
-                                <h1 class="stat-number">40 </h1>
-                                <i class="ri-add-line font-36 bold-700"></i>
-                            </div>
-                            <small class="text-muted">Reports</small>
-                        </div>
-                        <div class="right"><i class="ri-pie-chart-fill"></i></div>
-                    </div>
-                    <div class="card-info">
-                        <a href="#">More Info <i class="ri-arrow-right-wide-line"></i></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="middle">
-                        <div class="left">
-                            <div>
-                                <h1 class="stat-number">50 </h1>
-                                
-                            </div>
-                            <small class="text-muted">Masters</small>
-                        </div>
-                        <div class="right"><i class="ri-layout-grid-fill"></i></div>
-                    </div>
-                    <div class="card-info">
-                        <a href="#">More Info <i class="ri-arrow-right-wide-line"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div>
-              <div class="stats">
-                <div class="card-white w-70">
-                    <div class="head">
-                        <h4>Statistics</h4>
-                    </div>
-                    <div class="hr"></div>
-                    <div class="chart">
-                        <img src="assets/chart-stats.png" alt="Statistics-chart">
-                    </div>
-                </div>
-                <div class="card-white w-30">
-                    <div class="head">
-                        <h4>Analytics</h4>
-                    </div>
-                    <div class="hr"></div>
-                    <div class="chart">
-                        <img src="assets/chart-analytics.png" alt="Analytics-piechart">
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div>
-                <div class="sales-report">
+                <div class="addNewsales">
                     <div class="card-white">
-                        <div class="head">
-                            <h4>Sales Report</h4>
+                      <div class="breadcrumb p-30">
+                        <h2 style="margin-bottom: 0">Sales Order - <span><strong>SO/2025/00001</strong> </span></h2>
+                        <ul class="breadcrumb-nav">
+                          <li><a href="#">Transaction</a></li>
+                          <li><a href="#">Sale Orders</a></li>
+                          <li>SO Details</li>
+                        </ul>
+                      </div>
+                      <div class="hr"></div>
+                        <div class="add-new-sales-data SO-details">
+                          <div class="so-details-head">
+                            <div class="flex align-center gap-50">
+                              <h4>Sales Status</h4>
+                              <button class="approved-btn"><i class="ri-check-line"></i>&nbsp;Approved</button>
+                            </div>
+                            <div>
+                              <button class="reject-btn" id="openPopupBtn1"><i class="ri-close-line"></i>&nbsp;Reject</button>
+                            </div>
+                          </div>
+                          <br>
+                          <form action="">
+                          <div class="form-data">
+                            <div class="data-fields m-b-10">
+                              <label for="">SO Date *</label>
+                              <p>12-05-205</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">TX Type *</label>
+                              <p>TX Type Details</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Exchange Rate *</label>
+                              <p>2300</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Metal Type *</label>
+                              <p>XAU</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Warehouse</label>
+                              <p>West Warehouse</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Delivery Address *</label>
+                              <p>Road-12, Texas, US</p>
+                            </div>
+                          </div>
+                        </form>
                         </div>
-                        <div class="hr"></div>
-                        <div class="chart">
-                            <img src="assets/sales-chart.png" alt="Sale-report chart">
+                        <div class="items-list">
+                          <div class="head">
+                            <h4>List Details</h4>
+                            <button id="openPopupBtn" hidden><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
+                          </div>
+                          <br>
+                          <div class="so-table">
+                            <div style="overflow-x:auto;">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>Item code & Name <i class="ri-expand-up-down-line"></i></th>
+                                    <th>Fine OZ</th>
+                                    <th>OTY</th>
+                                    <th>Spot Price</th>
+                                    <th>Premium</th>
+                                    <th>Tax%</th>
+                                    <th>Total Price </th>
+                                    <th>Def Curr</th>
+                                    <th>Delv Date</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>G_100_CB_P49_AN</td>
+                                    <td>3,444</td>
+                                    <td>5000</td>
+                                    <td>2,000</td>
+                                    <td>20,000</td>
+                                    <td>14%</td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td>2025-06-12</td>
+                                  </tr>
+                                  <tr>
+                                    <td>G_100_CB_P49_AN</td>
+                                    <td>3,444</td>
+                                    <td>5000</td>
+                                    <td>2,000</td>
+                                    <td>20,000</td>
+                                    <td>14%</td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td>2025-06-12</td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>20,000</td>
+                                    <td>- </td>
+                                    <td>6749.00</td>
+                                    <td>32498.00</td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items-list">
+                          <div class="head">
+                            <h4>Cost Details</h4>
+                            <!-- <button id="openPopupBtn1"><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
+                            <button><a href="#" class="reject-btn"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button> -->
+                          </div>
+                          <br>
+                          <div class="so-table">
+                            <div style="overflow-x:auto;">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>ID <i class="ri-expand-up-down-line"></i></th>
+                                    <th>Add Cost</th>
+                                    <th>Type</th>
+                                    <th>Buy</th>
+                                    <th>Amount</th>
+                                    <th>Introducer</th>
+                                    <th>Account </th>
+                                    <th>Tax</th>
+                                    <th>Total</th>
+                                    <th>Def Curr</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1234</td>
+                                    <td>Predefined Transaction</td>
+                                    <td>INC</td>
+                                    <td>Perc</td>
+                                    <td>2,000</td>
+                                    <td>-</td>
+                                    <td>2215-ICICI</td>
+                                    <td>14%</td>
+                                    <td>32498.00</td>
+                                    <td>
+                                      2025-06-12
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>1234</td>
+                                    <td>Predefined Transaction</td>
+                                    <td>INC</td>
+                                    <td>Perc</td>
+                                    <td>2,000</td>
+                                    <td>-</td>
+                                    <td>2215-ICICI</td>
+                                    <td>14%</td>
+                                    <td>32498.00</td>
+                                    <td>
+                                      2025-06-12
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
                         </div>
                     </div>
-
                 </div>
               </div>
             <footer class="footer">
@@ -511,8 +577,100 @@
           </main>
           <div class="overlay"></div>
         </div>
+        <div id="pop-overlay"></div>
+        <div id="popup" class="add-so-pop">
+          <div class="head">
+            <h4>Cost - SO/2025/00001</h4>
+            <button id="closePopupBtn"><i class="ri-close-line"></i></button>
+          </div>
+          <div class="hr"></div>
+          <div class="pop-content-area">
+            <div class="pop-content">
+            <div>
+                <div class="form-data">
+                  <h4>Cost Details</h4>
+                  <br>
+                  <div class="data-fields m-b-10">
+                    <label for="">Add Cost ACC</label>
+                    <p>G_100_CB_P49_AN</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">INC or DCC or Intro</label>
+                  <p>DCC</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Inventary Value</label>
+                    <p>560.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Introducer</label>
+                    <p>Introducer 1</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Introducer Account</label>
+                    <p>140.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Add Cost (%Amt)</label>
+                    <p>200.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Add Cost Amount</label>
+                    <p>1200.00</p>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <div class="form-data">
+                  <h4>Cost Preview  </h4>
+                  <br>
+                  <div class="data-fields m-b-10">
+                    <label for="">Final Add Cost</label>
+                    <p>24500.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax *</label>
+                    <p>560.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax % </label>
+                    <p>12.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Tax Acc Code</label>
+                    <p>140.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Total Prize </label>
+                    <p>1200.00</p>
+                  </div>
+                  <div class="data-fields m-b-10">
+                    <label for="">Default Curr </label>
+                    <p>1200.00</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Popup Reject -->
+        <div id="popupNewCost" class="reject-popup">
+          <div class="head">
+            <button id="closePopupBtn1"><i class="ri-close-line"></i></button>
+          </div>
+          <div class="pop-content-area">
+            <h4>Are you sure?</h4><br>
+            <p>Do you really want to reject this record</p>
+          <br><br>
+          <div class="buttons">
+            <button class="reject-btn"><i class="ri-close-line"></i>&nbsp;Reject</button>
+            <button class="cancel-btn" id="cancel"><i class="ri-close-line"></i>&nbsp;Cancel</button>
+          </div>
+          </div>
+        </div>
     </div>
     <script src='https://unpkg.com/@popperjs/core@2'></script>
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 </html>

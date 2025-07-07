@@ -3,6 +3,12 @@
     .insights{
         grid-template-columns: repeat(1, 1fr);
     }
+    .filter-dropdown{
+        width: 260px!important;
+    }
+    .filter-dropdown{
+        right: -30px!important;
+    }
 }
 @media (max-width: 425px){
     .stats{
@@ -13,10 +19,27 @@
     .stats > div{
         width: 100%;
     }
+    .breadcrumb {
+        align-items: baseline!important;
+        flex-direction: column;
+    }
+    .add-so-pop .pop-content .form-data .data-fields{
+        grid-template-columns: repeat(1, 1fr)!important;
+        gap: 0!important;
+    }
+    .insights > div .middle{
+        padding: 15px!important;
+    }
 }
 @media (max-width: 576px){
     .profile{
         margin-right: 30px;
+    }
+    .filter-dropdown{
+        width: 300px!important;
+    }
+    .filter-data .filtercard-data{
+        grid-template-columns: repeat(1, 1fr)!important;
     }
 }
 @media (max-width: 767px){
@@ -33,11 +56,38 @@
     .search{
         display: none;
     }
+    .so-card .middle .left .tag{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .success-btn, .copy-btn, .save-btn, .approve-btn, .reject-btn, .cancel-btn, .calculate-btn, .btn-add{
+        padding: 8px 10px!important;
+        font-size: var(--font-12);
+    }
+    .add-new-sales-data, .items-list{
+        padding: 15px!important;
+    }
+    .breadcrumb {
+        padding: 15px;
+    }
 }
 
 @media (max-width: 992px){
     .timezone{
         display: none;
+    }
+    .pagination-area{
+        flex-direction: column;
+    }
+    .pagination-area p{
+        margin-bottom: 10px;
+    }
+    .insights > div .middle{
+        flex-wrap: wrap;
+    }
+    .so-card .middle .left{
+        width: 65%!important;
     }
 }
 
@@ -63,9 +113,34 @@
     .sales-report, .insights{
         margin-top: 15px;
     }
+     .add-so-pop .pop-content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    .add-so-pop .head{
+        padding: 15px;
+    }
+    .add-so-pop .pop-content-area{
+        padding: 15px;
+    }
+    .add-new-sales-data .form-data{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px 15px;
+    }
+    .add-new-sales-data .form-data .data-fields{
+        grid-template-columns: repeat(1, 1fr);
+    }
 } 
 @media (min-width: 375px){
     .insights{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .so{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+@media (min-width: 500px){
+    .so{
         grid-template-columns: repeat(2, 1fr);
     }
 } 
@@ -79,12 +154,42 @@
     .insights{
         grid-template-columns: repeat(2, 1fr);
     }
+    .add-new-sales-data .form-data{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .add-so-pop .pop-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1025px){
+    .add-so-pop .pop-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
 } 
 
 @media (min-width: 1100px){
     .insights{
         grid-template-columns: repeat(4, 1fr);
         margin-top: 30px;
+    }
+    .so{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .add-so-pop .pop-content-area{
+        padding: 20px 30px;
+    }
+    .add-so-pop .pop-content .form-data .data-fields{
+        grid-template-columns:repeat(2, 1fr);
+        gap: 0;
+    }
+    .add-new-sales-data .form-data .data-fields{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .add-so-pop .head{
+        padding: 20px 30px;
+    }
+    #popup, #popupNewCost{
+        width: 65%!important;
     }
 } 
 
@@ -93,6 +198,16 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
+    }
+    .so{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .add-new-sales-data .form-data{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 30px;
+    }
+    .SO-details .form-data{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

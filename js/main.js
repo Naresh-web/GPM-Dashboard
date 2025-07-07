@@ -1,3 +1,12 @@
+
+/** Clock */
+ function updateClock() {
+  var date = new Date();
+  const easternTime = date.toLocaleString("en-US", {timeZone: "America/New_York"});
+  document.getElementById('est').innerHTML = easternTime;
+}
+setInterval(updateClock, 1000);
+
 const ANIMATION_DURATION = 300;
 const SIDEBAR_EL = document.getElementById("sidebar");
 const SUB_MENU_ELS = document.querySelectorAll(
@@ -244,9 +253,32 @@ FIRST_SUB_MENUS_BTN.forEach((element) => {
  */
 INNER_SUB_MENUS_BTN.forEach((element) => {
   element.addEventListener("click", () => {
+    if (SIDEBAR_EL.classList.contains("collapsed"))
+      PoppersInstance.togglePopper(element.nextElementSibling);
+    else {
+      const parentMenu = element.closest(".menu.open-current-submenu .sub-menu .sub-menu-list");
+      if (parentMenu)
+        parentMenu
+          .querySelectorAll(":scope > ul > .menu-item.sub-menu > a")
+          .forEach(
+            (el) =>
+              window.getComputedStyle(el.nextElementSibling).display !==
+                "none" && slideUp(el.nextElementSibling)
+          );
+      slideToggle(element.nextElementSibling);
+    }
+  });
+});
+
+/**
+ INNER_SUB_MENUS_BTN.forEach((element) => {
+    element.addEventListener("click", () => {
     slideToggle(element.nextElementSibling);
   });
 });
+
+ **/
+
 
 // ================= ANIMATED STATS =================
 const animateValue = (obj, start, end, duration) => {
@@ -270,21 +302,65 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 /******* User Profile *******/
-let profile = document.querySelector('.profile');
-let menu = document.querySelector('.user-list');
 
-profile.onclick = function () {
+function userProfileDropDown(){
+  let profile = document.querySelector('.profile');
+  let menu = document.querySelector('.user-list');
+  let userBody = document.body;
+
+  profile.addEventListener('click', function(e){ 
+    e.stopPropagation();
     menu.classList.toggle('active');
+  }); // open menu
+  userBody.addEventListener('click', function(){
+      if(menu.classList.contains('active')){
+        menu.classList.remove('active');
+        } 
+    });
+}
+userProfileDropDown()
+
+
+/******* 
+ profile.onclick = function () {
+    menu.classList.toggle('active');
+} 
+*******/
+
+
+/******* Table Filter *******/
+function tableFilterDropDown(){
+  const dropdownBtn = document.getElementById('dropdownBtn');
+const dropdownMenu = document.getElementById('dropdownMenu');
+
+// Toggle dropdown visibility
+dropdownBtn.addEventListener('click', function (event) {
+  event.stopPropagation();
+  if (dropdownMenu.classList.contains('active')) {
+    closeDropdown();   
+  } else {
+    dropdownMenu.classList.remove('hidden');
+    setTimeout(() => dropdownMenu.classList.add('active'), 10);
+  }
+});
+
+// Close when clicking outside
+document.addEventListener('click', function (event) {
+  if (!dropdownMenu.contains(event.target) && !dropdownBtn.contains(event.target)) {
+    closeDropdown();
+  }
+});
+// Close function with fade-out
+function closeDropdown() {
+  dropdownMenu.classList.remove('active');
+  setTimeout(() => dropdownMenu.classList.add('hidden'), 300); // Match transition duration
+}
 }
 
+tableFilterDropDown()
 
 
 
-function updateClock() {
-  var date = new Date();
-  const easternTime = date.toLocaleString("en-US", {timeZone: "America/New_York"});
-  document.getElementById('est').innerHTML = easternTime;
-}
 
-setInterval(updateClock, 1000);
