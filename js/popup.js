@@ -1,5 +1,4 @@
 function addNewItemsPopUp(){
-    const cancel = document.getElementById('cancel')
     const openBtn = document.getElementById('openPopupBtn');
     const openBtn1 = document.getElementById('openPopupBtn1');
     const closeBtn = document.getElementById('closePopupBtn');
@@ -12,7 +11,6 @@ function addNewItemsPopUp(){
       popup.style.display = 'block';
       overlay.style.display = 'block';
     });
-
     openBtn1.addEventListener('click', () => {
         popupNewCost.style.display = 'block';
         overlay.style.display = 'block';
@@ -26,13 +24,15 @@ function addNewItemsPopUp(){
       popup.style.display = 'none';
       overlay.style.display = 'none';
     });
-    cancel.addEventListener('click', () => {
-        popupNewCost.style.display = 'none';
-        overlay.style.display = 'none';
-      });
     // Optional: close popup when clicking outside
     overlay.addEventListener('click', () => {
+      overlay.style.display = 'none';
       popup.style.display = 'none';
+      popupNewCost.style.display = 'none';
+    });
+    
+    const cancel = document.getElementById('cancel')
+    cancel.addEventListener('click', () => {
       popupNewCost.style.display = 'none';
       overlay.style.display = 'none';
     });
