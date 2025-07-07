@@ -448,6 +448,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   .breadcrumb h2{
     font-weight: var(--font-weight-600);

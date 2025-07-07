@@ -21,13 +21,15 @@
     }
     .breadcrumb {
         align-items: baseline!important;
-        flex-direction: column;
     }
     .add-so-pop .pop-content .form-data .data-fields{
         grid-template-columns: repeat(1, 1fr)!important;
         gap: 0!important;
     }
     .insights > div .middle{
+        padding: 15px!important;
+    }
+    .stats .head, .sales-report .head{
         padding: 15px!important;
     }
 }
