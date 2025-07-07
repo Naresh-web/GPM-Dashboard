@@ -71,6 +71,9 @@
     .breadcrumb {
         padding: 15px;
     }
+    .reject-popup{
+        max-width: 75%!important;
+    }
 }
 
 @media (max-width: 992px){
@@ -160,10 +163,16 @@
     .add-so-pop .pop-content{
         grid-template-columns: repeat(2, 1fr);
     }
+    .reject-popup{
+        max-width: 50%!important;
+    }
 }
 @media (min-width: 1025px){
     .add-so-pop .pop-content{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .reject-popup{
+        max-width: 25%!important;
     }
 } 
 

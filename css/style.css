@@ -978,7 +978,6 @@ table {
         align-items: center;
     }
     .reject-popup{
-        max-width: 25%!important;
         overflow: hidden!important;
         padding: 30px!important;
     }
@@ -991,6 +990,7 @@ table {
     }
     .reject-popup .pop-content-area .buttons{
         justify-content: center;
+        flex-wrap: wrap;
     }
     #popupReject{
         position: fixed;
