@@ -421,7 +421,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">Project Code *</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select Project</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -429,7 +429,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">Customer *</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select Customer</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -437,7 +437,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">Exchange Rate</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select Exchange Rate</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -449,7 +449,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">TX Type *</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select TX Type</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -457,7 +457,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">Metal Type</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select Metal</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -469,7 +469,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">Currency *</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select Bank</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -477,7 +477,7 @@
                             <div class="data-fields m-b-10">
                               <label for="">Warehouse</label>
                               <select name="" id="">
-                                <option value="Select">Select</option>
+                                <option value="Select">Select Warehouse</option>
                                 <option value="opt1">Option 1</option>
                                 <option value="opt2">Option 2</option>
                               </select>
@@ -503,8 +503,8 @@
                         <div class="items-list">
                           <div class="head">
                             <h4>Items List</h4>
-                            <button id="openPopupBtn"><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
-                            <button><a href="#" class="reject-btn"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button>
+                            <button id="openPopupBtn"><a href="#" class="btn-add ptb8-plr-16"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
+                            <button><a href="#" class="reject-btn ptb8-plr-16"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button>
                           </div>
                           <br>
                           <div class="so-table">
@@ -536,11 +536,11 @@
                                     <td>32498.00</td>
                                     <td>2025-06-12</td>
                                     <td class="tooltip">
-                                      <i class="ri-more-2-fill"></i>
-                                      <span class="tooltiptext">
+                                      <i class="ri-more-2-fill openTooltipBtn" data-popup="tooltip1"></i>
+                                      <span class="tooltiptext" id="tooltip1">
                                         <div class="icons">
-                                          <span><i class="ri-edit-line"></i> Edit</span>
-                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                          <span><img src="assets/edit-icon.svg" alt=""> Edit</span>
+                                          <span><img src="assets/delete-icon.svg" alt=""> Delete</span>
                                         </div>
                                       </span>
                                     </td>
@@ -556,11 +556,11 @@
                                     <td>32498.00</td>
                                     <td>2025-06-12</td>
                                     <td class="tooltip">
-                                      <i class="ri-more-2-fill"></i>
-                                      <span class="tooltiptext">
+                                      <i class="ri-more-2-fill openTooltipBtn" data-popup="tooltip2"></i>
+                                      <span class="tooltiptext" id="tooltip2">
                                         <div class="icons">
-                                          <span><i class="ri-edit-line"></i> Edit</span>
-                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                          <span><img src="assets/edit-icon.svg" alt=""> Edit</span>
+                                          <span><img src="assets/delete-icon.svg" alt=""> Delete</span>
                                         </div>
                                       </span>
                                     </td>
@@ -586,8 +586,8 @@
                         <div class="items-list">
                           <div class="head">
                             <h4>Add Cost</h4>
-                            <button id="openPopupBtn1"><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
-                            <button><a href="#" class="reject-btn"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button>
+                            <button id="openPopupBtn1"><a href="#" class="btn-add ptb8-plr-16"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
+                            <button><a href="#" class="reject-btn ptb8-plr-16"><i class="ri-delete-bin-line"></i>&nbsp;Delete All</a></button>
                           </div>
                           <br>
                           <div class="so-table">
@@ -619,11 +619,11 @@
                                     <td>32498.00</td>
                                     <td>2025-06-12</td>
                                     <td class="tooltip">
-                                      <i class="ri-more-2-fill"></i>
-                                      <span class="tooltiptext">
+                                      <i class="ri-more-2-fill openTooltipBtn" data-popup="popup3"></i>
+                                      <span class="tooltiptext" id="popup3">
                                         <div class="icons">
-                                          <span><i class="ri-edit-line"></i> Edit</span>
-                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                          <span><img src="assets/edit-icon.svg" alt=""> Edit</span>
+                                          <span><img src="assets/delete-icon.svg" alt=""> Delete</span>
                                         </div>
                                       </span>
                                     </td>
@@ -639,11 +639,11 @@
                                     <td>32498.00</td>
                                     <td>2025-06-12</td>
                                     <td class="tooltip">
-                                      <i class="ri-more-2-fill"></i>
-                                      <span class="tooltiptext">
+                                      <i class="ri-more-2-fill openTooltipBtn" data-popup="popup4"></i>
+                                      <span class="tooltiptext" id="popup4">
                                         <div class="icons">
-                                          <span><i class="ri-edit-line"></i> Edit</span>
-                                          <span><i class="ri-delete-bin-line"></i> Delete</span>
+                                          <span><img src="assets/edit-icon.svg" alt=""> Edit</span>
+                                          <span><img src="assets/delete-icon.svg" alt=""> Delete</span>
                                         </div>
                                       </span>
                                     </td>
@@ -897,8 +897,12 @@
           </div>
         </div>
     </div>
+    <script>
+      
+</script>
     <script src='https://unpkg.com/@popperjs/core@2'></script>
     <script src="js/main.js"></script>
+    <script src="js/multipop.js"></script>
     <script src="js/popup.js"></script>
 </body>
 </html>

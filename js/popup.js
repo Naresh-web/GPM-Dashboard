@@ -1,3 +1,4 @@
+
 function addNewItemsPopUp(){
     const openBtn = document.getElementById('openPopupBtn');
     const openBtn1 = document.getElementById('openPopupBtn1');
@@ -30,7 +31,7 @@ function addNewItemsPopUp(){
       popup.style.display = 'none';
       popupNewCost.style.display = 'none';
     });
-    
+
     const cancel = document.getElementById('cancel')
     cancel.addEventListener('click', () => {
       popupNewCost.style.display = 'none';
