@@ -278,13 +278,13 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("/assets/arrow-down.svg") white no-repeat calc(100% - 10px) !important;
+    background: url("../assets/arrow-down.svg") white no-repeat calc(100% - 10px) !important;
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--input-color);
     opacity: 1;
     display: block;
-    background: url(/assets/calendar-icon.svg) no-repeat;
+    background: url(../assets/calendar-icon.svg) no-repeat;
     width: 20px;
     height: 20px;
     border-width:0;
