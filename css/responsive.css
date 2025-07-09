@@ -7,7 +7,7 @@
         width: 260px!important;
     }
     .filter-dropdown{
-        right: -30px!important;
+        right: -16px!important;
     }
 }
 @media (max-width: 425px){
@@ -61,7 +61,10 @@
     .so-card .middle .left .tag{
         position: absolute;
         top: 15px;
-        right: 15px;
+        right: 38px;
+    }
+    .calIcon{
+        top: 18px!important;
     }
     .success-btn, .copy-btn, .save-btn, .approve-btn, .reject-btn, .cancel-btn, .calculate-btn, .btn-add{
         padding: 8px 10px!important;
@@ -75,6 +78,9 @@
     }
     .reject-popup{
         max-width: 75%!important;
+    }
+    .so-details-head .head-main .approved-btn{
+        font-size: var(--font-12)!important;
     }
 }
 
@@ -93,6 +99,15 @@
     }
     .so-card .middle .left{
         width: 65%!important;
+    }
+    .so-details-head .head-main .approved-btn{
+        font-size: var(--font-14)!important;
+    }
+    .so-details-head{
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+    .so-details-head div.text-right{
+        text-align: left;
     }
 }
 
@@ -144,7 +159,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 } 
-@media (min-width: 500px){
+@media (min-width: 740px){
     .so{
         grid-template-columns: repeat(2, 1fr);
     }

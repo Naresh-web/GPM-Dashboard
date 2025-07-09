@@ -408,43 +408,63 @@
                       <div class="hr"></div>
                         <div class="add-new-sales-data SO-details">
                           <div class="so-details-head">
-                            <div class="flex align-center gap-50">
+                            <div class="head-main">
                               <h4>Sales Status</h4>
-                              <button class="approved-btn"><i class="ri-check-line"></i>&nbsp;Approved</button>
+                              <div>
+                                <button class="approved-btn"><img src="assets/tick-icon-green.svg" alt="">&nbsp;&nbsp;Approved</button>
+                              </div>
                             </div>
-                            <div>
-                              <button class="reject-btn" id="openPopupBtn1"><i class="ri-close-line"></i>&nbsp;Reject</button>
+                            <div class="text-right">
+                              <button class="reject-btn" id="openPopupBtn1"><img src="assets/cancel-icon.svg" alt="">&nbsp;&nbsp;Reject</button>
                             </div>
                           </div>
-                          <br>
-                          <form action="">
-                          <div class="form-data">
+                          
+                          <div class="form-data so-details-content">
                             <div class="data-fields m-b-10">
                               <label for="">SO Date *</label>
                               <p>12-05-205</p>
                             </div>
                             <div class="data-fields m-b-10">
-                              <label for="">TX Type *</label>
+                              <label for="">Customer </label>
+                              <p>Mr. John</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">TX Type</label>
                               <p>TX Type Details</p>
                             </div>
                             <div class="data-fields m-b-10">
-                              <label for="">Exchange Rate *</label>
+                              <label for="">Currency </label>
+                              <p>AED</p>
+                            </div>                           
+                            <div class="data-fields m-b-10">
+                              <label for="">Exchange Rate</label>
                               <p>2300</p>
                             </div>
                             <div class="data-fields m-b-10">
-                              <label for="">Metal Type *</label>
+                              <label for="">Sales Person </label>
+                              <p>Mr. Ding</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Metal Type</label>
                               <p>XAU</p>
+                            </div>
+                            <div class="data-fields m-b-10">
+                              <label for="">Transporter </label>
+                              <p>MM Transporter</p>
                             </div>
                             <div class="data-fields m-b-10">
                               <label for="">Warehouse</label>
                               <p>West Warehouse</p>
                             </div>
                             <div class="data-fields m-b-10">
+                              <label for="">Project code </label>
+                              <p>PRJ_0002</p>
+                            </div>
+                            <div class="data-fields m-b-10">
                               <label for="">Delivery Address *</label>
                               <p>Road-12, Texas, US</p>
                             </div>
                           </div>
-                        </form>
                         </div>
                         <div class="items-list">
                           <div class="head">
@@ -452,25 +472,25 @@
                             <button id="openPopupBtn" hidden><a href="#" class="btn-add"><i class="ri-add-large-line"></i>&nbsp;Add</a></button>
                           </div>
                           <br>
-                          <div class="so-table">
+                          <div class="so-table sales-status">
                             <div style="overflow-x:auto;">
                               <table>
                                 <thead>
                                   <tr>
-                                    <th>Item code & Name <i class="ri-expand-up-down-line"></i></th>
-                                    <th>Fine OZ</th>
-                                    <th>OTY</th>
-                                    <th>Spot Price</th>
-                                    <th>Premium</th>
-                                    <th>Tax%</th>
-                                    <th>Total Price </th>
-                                    <th>Def Curr</th>
-                                    <th>Delv Date</th>
+                                    <th><div>Item code & Name <i class="ri-expand-up-down-line"></i></div> </th>
+                                    <th><div>Fine OZ <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>OTY <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Spot Price <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Premium <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Tax% <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Total Price <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Def Curr <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Delv Date <i class="ri-expand-up-down-line"></i></div></th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td>G_100_CB_P49_AN</td>
+                                    <td class="text-left">G_100_CB_P49_AN</td>
                                     <td>3,444</td>
                                     <td>5000</td>
                                     <td>2,000</td>
@@ -478,10 +498,10 @@
                                     <td>14%</td>
                                     <td>6749.00</td>
                                     <td>32498.00</td>
-                                    <td>2025-06-12</td>
+                                    <td class="text-left">2025-06-12</td>
                                   </tr>
                                   <tr>
-                                    <td>G_100_CB_P49_AN</td>
+                                    <td class="text-left">G_100_CB_P49_AN</td>
                                     <td>3,444</td>
                                     <td>5000</td>
                                     <td>2,000</td>
@@ -489,9 +509,9 @@
                                     <td>14%</td>
                                     <td>6749.00</td>
                                     <td>32498.00</td>
-                                    <td>2025-06-12</td>
+                                    <td class="text-left">2025-06-12</td>
                                   </tr>
-                                  <tr>
+                                  <tr class="font-weight-600">
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -519,16 +539,16 @@
                               <table>
                                 <thead>
                                   <tr>
-                                    <th>ID <i class="ri-expand-up-down-line"></i></th>
-                                    <th>Add Cost</th>
-                                    <th>Type</th>
-                                    <th>Buy</th>
-                                    <th>Amount</th>
-                                    <th>Introducer</th>
-                                    <th>Account </th>
-                                    <th>Tax</th>
-                                    <th>Total</th>
-                                    <th>Def Curr</th>
+                                    <th><div>ID <i class="ri-expand-up-down-line"></i></div> </th>
+                                    <th><div>Add Cost <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Type <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Buy <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Amount <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Introducer <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Account <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Tax <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Total <i class="ri-expand-up-down-line"></i></div></th>
+                                    <th><div>Def Curr <i class="ri-expand-up-down-line"></i></div></th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -537,11 +557,11 @@
                                     <td>Predefined Transaction</td>
                                     <td>INC</td>
                                     <td>Perc</td>
-                                    <td>2,000</td>
+                                    <td class="text-right">2,000</td>
                                     <td>-</td>
-                                    <td>2215-ICICI</td>
-                                    <td>14%</td>
-                                    <td>32498.00</td>
+                                    <td class="text-right">2215-ICICI</td>
+                                    <td class="text-right">14%</td>
+                                    <td class="text-right">32498.00</td>
                                     <td>
                                       2025-06-12
                                     </td>
@@ -551,11 +571,11 @@
                                     <td>Predefined Transaction</td>
                                     <td>INC</td>
                                     <td>Perc</td>
-                                    <td>2,000</td>
+                                    <td class="text-right">2,000</td>
                                     <td>-</td>
-                                    <td>2215-ICICI</td>
-                                    <td>14%</td>
-                                    <td>32498.00</td>
+                                    <td class="text-right">2215-ICICI</td>
+                                    <td class="text-right">14%</td>
+                                    <td class="text-right">32498.00</td>
                                     <td>
                                       2025-06-12
                                     </td>
@@ -656,15 +676,15 @@
         <!-- Popup Reject -->
         <div id="popupNewCost" class="reject-popup">
           <div class="head">
-            <button id="closePopupBtn1"><i class="ri-close-line"></i></button>
+            <button id="closePopupBtn1"><img src="assets/close-dark-icon.svg" alt=""></button>
           </div>
           <div class="pop-content-area">
             <h4>Are you sure?</h4><br>
-            <p>Do you really want to reject this record</p>
+            <p>Do you really want to <span class="font-weight-600" style="color: #DE5555;">Reject</span> this record</p>
           <br><br>
           <div class="buttons">
-            <button class="reject-btn"><i class="ri-close-line"></i>&nbsp;Reject</button>
-            <button class="cancel-btn" id="cancel"><i class="ri-close-line"></i>&nbsp;Cancel</button>
+            <button class="reject-btn"><img src="assets/cancel-icon.svg" alt="">&nbsp;&nbsp;Reject</button>
+            <button class="cancel-btn" id="cancel"><img src="assets/cancel-icon.svg" alt="">&nbsp;&nbsp;Cancel</button>
           </div>
           </div>
         </div>

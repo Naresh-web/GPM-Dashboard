@@ -406,6 +406,7 @@
               <div class="so insights">
                 <!-- CARD -->
                 <div class="so-card card-white">
+                  <img class="calIcon" src="assets/calendar1.svg" alt="">
                     <div class="middle">
                         <div class="left">
                           <h5>Total Sales</h5><br>
@@ -421,6 +422,7 @@
                     </div>
                 </div>
                 <div class="so-card card-white">
+                  <img class="calIcon" src="assets/calendar1.svg" alt="">
                   <div class="middle">
                       <div class="left">
                         <h5>Sales Revenue</h5><br>
@@ -437,6 +439,7 @@
                   </div>
               </div>
               <div class="so-card card-white">
+                <img class="calIcon" src="assets/calendar1.svg" alt="">
                 <div class="middle">
                     <div class="left">
                       <h5>Sales Profit</h5><br>
@@ -457,16 +460,19 @@
                 <div class="sales-report">
                     <div class="card-white">
                         <div class="head">
-                            <button><a href="add-new-sales-order.html" class="btn-add">+ &nbsp;Add SO</a></button>
+                            <button>
+                              <a href="add-new-sales-order.html" class="btn-add">
+                              <img src="assets/icon-plus.svg" alt="">&nbsp; &nbsp;Add SO</a>
+                            </button>
                             <div class="filterarea">
-                              <i class="ri-arrow-up-down-line"></i>&nbsp;
-                              <i class="ri-filter-line filter" id="dropdownBtn"></i>
+                              <img src="assets/Sort-icon.svg" alt="">
+                              <img src="assets/filter-icon.svg" class="filter" id="dropdownBtn" alt="">
                               <div class="filter-dropdown hidden" id="dropdownMenu">
                                 <div class="filter-head">
                                   <h4>Filters</h4>
                                     <div class="filterbtn">
                                         <span class="plain-btn"><a href="#">Clear all</a></span>&nbsp;&nbsp;
-                                        <button class="success-btn">Apply</button>
+                                        <button class="success-btn ptb8-plr-16 text-capitalize">Apply</button>
                                     </div>
                                 </div>
                                 <div class="hr"></div>
@@ -542,14 +548,44 @@
                             <table>
                               <thead>
                                 <tr>
-                                  <th>SO_NO <i class="ri-expand-up-down-line"></i></th>
-                                  <th>SO_Date</th>
-                                  <th>Bank</th>
-                                  <th>Currency</th>
-                                  <th>Party_Amt</th>
-                                  <th>Approver</th>
-                                  <th>Camceller </th>
-                                  <th>Status</th>
+                                  <th>
+                                    <div>
+                                      SO_NO <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
+                                  <th><div>
+                                    SO_Date <i class="ri-expand-up-down-line"></i>
+                                  </div></th>
+                                  <th>
+                                    <div>
+                                      Bank <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      Currency <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      Party_Amt <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      Approver <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      Camceller <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      Status <i class="ri-expand-up-down-line"></i>
+                                    </div>
+                                  </th>
                                   <th></th>
                             
                                 </tr>
@@ -560,9 +596,9 @@
                                   <td>07-05-2025 - 12:00 AM </td>
                                   <td>CIC-EUR</td>
                                   <td>AED</td>
-                                  <td>200.00</td>
-                                  <td>2</td>
-                                  <td>0</td>
+                                  <td class="text-right">200.00</td>
+                                  <td class="text-right">2</td>
+                                  <td class="text-right">0</td>
                                   <td><span class="approved-btn"><i class="ri-check-line"></i>&nbsp;Approved</span></td>
                                   <td><i class="ri-more-2-fill"></i></td>
                                 </tr>
@@ -571,9 +607,9 @@
                                   <td>07-05-2025 - 12:00 AM </td>
                                   <td>CIC-EUR</td>
                                   <td>AED</td>
-                                  <td>200.00</td>
-                                  <td>2</td>
-                                  <td>0</td>
+                                  <td class="text-right">200.00</td>
+                                  <td class="text-right">2</td>
+                                  <td class="text-right">0</td>
                                   <td><span class="rejected-btn"><i class="ri-close-line"></i>&nbsp;Rejected</span></td>
                                   <td><i class="ri-more-2-fill"></i></td>
                                 </tr>
@@ -582,9 +618,9 @@
                                   <td>07-05-2025 - 12:00 AM </td>
                                   <td>CIC-EUR</td>
                                   <td>AED</td>
-                                  <td>200.00</td>
-                                  <td>2</td>
-                                  <td>0</td>
+                                  <td class="text-right">200.00</td>
+                                  <td class="text-right">2</td>
+                                  <td class="text-right">0</td>
                                   <td><span class="pending-btn"><i class="ri-hourglass-line"></i> &nbsp;Pending</span></td>
                                   <td><i class="ri-more-2-fill"></i></td>
                                 </tr>

@@ -1,9 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --body-font: "Noto Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
     --font-primary: "Noto Sans", sans-serif;
     --font-weight-100: 100;
     --font-weight-200: 200;
@@ -21,6 +22,7 @@
     --color-primary: #56441b;
     --color-secondary: #000;
     --text-color: #333333;
+    --color-red: #DE5555;
     --text-color-999: #999999;
     --color-light: rgba(132, 139, 200, 0.18);
     --font-12: 12px;
@@ -158,21 +160,45 @@
   .ptb8-plr-16{
     padding: var(--padding-tb8-lt-16)!important;
   }
+  .text-capitalize{
+    text-transform: capitalize!important;
+  }
   .m-b-10{
     margin-bottom: 10px;
   }
-
+  .color-red{
+    color: var(--color-red);
+  }
   .card-white{
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
   }
+  .color-white{
+    color: var(--color-white);
+  }
   .hr{
     border: 1px solid #dedede;
+  }
+  .hr-green{
+    border: 1px solid #F5E7C9;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .text-left{
+    text-align: left!important;
+  }
+  .text-center{
+    text-align: center!important;
+  }
+  .font-weight-600{
+    font-weight: var(--font-weight-600);
   }
   button{
     cursor: pointer;
     border: none;
     transition: .25s linear;
+    font-family: var(--body-font);
   }
   button:hover{
     box-shadow: 0px 6px 13px -3px #3180d061;
@@ -185,7 +211,10 @@
     border-radius: 30px;
     text-transform: uppercase;
     font-size: 11px;
-    font-weight: var(--font-weight-500);
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-400);
+    display: inline-flex;
+    align-items: center;
   }
   .success-btn, .copy-btn, .save-btn, .approve-btn, .reject-btn,  .cancel-btn, .calculate-btn{
     background-color: #EEFDF0;
@@ -193,8 +222,11 @@
     border: 1px solid #65C06F;
     padding: 12px 15px;
     border-radius: 5px;
+    font-family: var(--font-roboto);
     font-size: var(--font-14);
-    font-weight: var(--font-weight-500);
+    font-weight: var(--font-weight-400);
+    display: inline-flex;
+    align-items: center;
   }
   .rejected-btn{
     background-color: #FFEEEE;
@@ -248,17 +280,20 @@
   .btn-add{
     background-color: #5774F8;
     color: var(--color-white);
-    font-weight: var(--font-weight-500);
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-400);
     padding: 12px 15px;
     border: 1px solid #5774F8;
     border-radius: 5px;
     font-size: var(--font-14);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
   }
   input, select{
+    font-family: var(--body-font);
     width: 100%;
     border: 1px solid var(--input-color);
-    height: 32px;
+    height: 34px;
     border-radius: 10px;
     padding: 8px;
     color: var(--input-color);
