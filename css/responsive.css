@@ -73,7 +73,7 @@
     .add-new-sales-data, .items-list{
         padding: 15px!important;
     }
-    .breadcrumb {
+    .breadcrumb.p-15 {
         padding: 15px;
     }
     .reject-popup{
