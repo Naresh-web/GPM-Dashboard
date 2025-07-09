@@ -977,6 +977,29 @@ table {
     display: grid;
     align-items: center;
   }
+  .add-new-sales-data .form-data .data-fields.input-btn span{
+    display: flex;
+    align-items: stretch;
+  }
+  .add-new-sales-data .form-data .data-fields.input-btn span input{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #FFFCF5;
+    border-color: #DEC180;
+  }
+  .add-new-sales-data .form-data .data-fields.input-btn span input::placeholder{
+    color: var(--input-color);
+  }
+  .add-new-sales-data .form-data .data-fields.input-btn span button{
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #5774F8;
+    color: white;
+    border: 1px solid #5774F8;
+  }
   .add-new-sales-data .form-data .data-fields label{
     font-size: var(--font-14);
   }

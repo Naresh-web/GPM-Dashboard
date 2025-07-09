@@ -157,6 +157,9 @@
   .p-30{
     padding: 30px;
   }
+  .p-tb-20-lr-30{
+    padding: 20px 30px;
+  }
   .ptb8-plr-16{
     padding: var(--padding-tb8-lt-16)!important;
   }
