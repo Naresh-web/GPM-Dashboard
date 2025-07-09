@@ -22,7 +22,7 @@ body{
   .layout .header {
     display: flex;
     align-items: center;
-    padding: 12px 50px;
+    padding: 12px 15px;
     border-bottom: 3px solid #d9d9d9;
     background-color: var(--color-white);
   }
@@ -34,7 +34,7 @@ body{
     gap: 25px;
   }
   .layout .content {
-    padding: 30px 50px;
+    padding: 15px 15px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-gray);
@@ -456,7 +456,6 @@ body{
   ul.breadcrumb-nav {
     padding: 10px 0;
     list-style: none;
-    text-align: end;
   }
   ul.breadcrumb-nav li {
     display: inline-block;
@@ -976,6 +975,7 @@ table {
   .add-new-sales-data .form-data .data-fields{
     display: grid;
     align-items: center;
+    gap: 10px;
   }
   .add-new-sales-data .form-data .data-fields.input-btn span{
     display: flex;

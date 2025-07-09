@@ -23,8 +23,8 @@
       min-height: auto;
       position: relative; }
     .layout .sidebar {
-      width: 250px;
-      min-width: 250px;
+      width: 220px;
+      min-width: 220px;
       -webkit-transition: width, left, right, 0.3s;
       transition: width, left, right, 0.3s; }
       .layout .sidebar.collapsed {
@@ -33,7 +33,7 @@
       @media (max-width: 480px) {
         .layout .sidebar.break-point-xs {
           position: fixed;
-          left: -250px;
+          left: -220px;
           height: 100%;
           top: 0;
           z-index: 100; }
@@ -50,7 +50,7 @@
       @media (max-width: 576px) {
         .layout .sidebar.break-point-sm {
           position: fixed;
-          left: -250px;
+          left: -220px;
           height: 100%;
           top: 0;
           z-index: 100; }
@@ -67,7 +67,7 @@
       @media (max-width: 768px) {
         .layout .sidebar.break-point-md {
           position: fixed;
-          left: -250px;
+          left: -220px;
           height: 100%;
           top: 0;
           z-index: 100; }
@@ -84,7 +84,7 @@
       @media (max-width: 992px) {
         .layout .sidebar.break-point-lg {
           position: fixed;
-          left: -250px;
+          left: -220px;
           height: 100%;
           top: 0;
           z-index: 100; }
@@ -118,7 +118,7 @@
       @media (max-width: 1600px) {
         .layout .sidebar.break-point-xxl {
           position: fixed;
-          left: -250px;
+          left: -220px;
           height: 100%;
           top: 0;
           z-index: 100; }
@@ -196,7 +196,7 @@
       @media (max-width: 480px) {
         .layout.rtl .sidebar.break-point-xs {
           left: auto;
-          right: -250px; }
+          right: -220px; }
           .layout.rtl .sidebar.break-point-xs.collapsed {
             left: auto;
             right: -80px; }
@@ -206,7 +206,7 @@
       @media (max-width: 576px) {
         .layout.rtl .sidebar.break-point-sm {
           left: auto;
-          right: -250px; }
+          right: -220px; }
           .layout.rtl .sidebar.break-point-sm.collapsed {
             left: auto;
             right: -80px; }
@@ -216,7 +216,7 @@
       @media (max-width: 768px) {
         .layout.rtl .sidebar.break-point-md {
           left: auto;
-          right: -250px; }
+          right: -220px; }
           .layout.rtl .sidebar.break-point-md.collapsed {
             left: auto;
             right: -80px; }
@@ -226,7 +226,7 @@
       @media (max-width: 992px) {
         .layout.rtl .sidebar.break-point-lg {
           left: auto;
-          right: -250px; }
+          right: -220px; }
           .layout.rtl .sidebar.break-point-lg.collapsed {
             left: auto;
             right: -80px; }
@@ -236,7 +236,7 @@
       @media (max-width: 1200px) {
         .layout.rtl .sidebar.break-point-xl {
           left: auto;
-          right: -250px; }
+          right: -220px; }
           .layout.rtl .sidebar.break-point-xl.collapsed {
             left: auto;
             right: -80px; }
@@ -246,7 +246,7 @@
       @media (max-width: 1600px) {
         .layout.rtl .sidebar.break-point-xxl {
           left: auto;
-          right: -250px; }
+          right: -220px; }
           .layout.rtl .sidebar.break-point-xxl.collapsed {
             left: auto;
             right: -80px; }

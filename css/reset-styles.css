@@ -331,7 +331,6 @@
   label{
     font-size: 13px;
     font-weight: var(--font-weight-500);
-    margin-bottom: 10px;
     display: block;
   }
   .hidden {
