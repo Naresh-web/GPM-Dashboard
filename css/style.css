@@ -887,10 +887,10 @@ font-weight: var(--font-weight-600);
   z-index: 99;
   cursor: pointer;
 }
-.filterarea img{
+.filterarea i{
     border: 1px solid #828282;
     font-size: var(--font-14);
-    padding: 15px 13px;
+    padding: 12px;
     border-radius: 5px;
     cursor: pointer;
     color: #828282;
