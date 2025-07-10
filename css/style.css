@@ -917,11 +917,22 @@ table {
     font-size: var(--font-14);
     font-weight: var(--font-weight-600);
   }
+  tfoot{
+    position: sticky;
+    bottom: 0;
+  }
+  tfoot tr{
+    border: 1px solid var(--t-border-color);
+  }
+  tfoot tr td{
+    text-align: right;
+    background-color: #F1F1F1;
+  }
 .sum-row{
   font-weight: var(--font-weight-600);
 }
 .sum-row td{
-  border: 1px solid transparent;
+  border: none;
 }
   thead tr th > div{
     display: flex;
@@ -938,10 +949,6 @@ table {
     border: 1px solid var(--t-border-color);
     word-break: keep-all;
     color: var(--color-black);
-  }
-  
-   tbody tr:last-child{
-    background-color: #F1F1F1;  
   }
   tbody.transparent tr:last-child{
     background-color: transparent;  
