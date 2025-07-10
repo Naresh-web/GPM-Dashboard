@@ -917,7 +917,12 @@ table {
     font-size: var(--font-14);
     font-weight: var(--font-weight-600);
   }
-
+.sum-row{
+  font-weight: var(--font-weight-600);
+}
+.sum-row td{
+  border: 1px solid transparent;
+}
   thead tr th > div{
     display: flex;
     justify-content: space-between;
