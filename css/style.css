@@ -751,6 +751,9 @@ font-weight: var(--font-weight-600);
     align-items: center;
     gap: 15px;
 }
+.filter-data .filtercard-data > div label{
+  margin-bottom: 10px;
+}
 .filter-data input, .filter-data select{
   border-radius: 10px;
   height: 44px;
