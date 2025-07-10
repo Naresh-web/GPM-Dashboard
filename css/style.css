@@ -945,6 +945,7 @@ table {
     background-color: var(--t-head-bg);
     position: sticky;
     top: 0;
+    z-index: 99;
   }
   th, td {
     text-align: left;
