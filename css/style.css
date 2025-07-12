@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: var(--body-font);
@@ -716,7 +717,7 @@ body{
     padding: 0px;
     border-radius: 10px;
     border: 1px solid #dcdcdc;
-    z-index: 9;
+    z-index: 999;
     max-height: 450px;
     overflow-y: scroll;
 }
